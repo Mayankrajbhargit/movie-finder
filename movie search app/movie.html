@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE FINDER </title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Finder Pro</h1>
+        <form id="searchForm">
+            <input type="text" id="searchinput" placeholder="search for a movie(e.g., Batman)..." autocomplete="off">
+            <button type="submit" id="searchbtn">search</button>
+        </form>
+    </header>
+    <main>
+        <div id="loader" class="status-msg hidden">Searching database</div>
+         <div id="errormsg" class="status-msg error"></div>
+          <div id="movieGrid"></div>
+    </main>
+    <script src="movie.js"></script>
+</body>
+</html>
